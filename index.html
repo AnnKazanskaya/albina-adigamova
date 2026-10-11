@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Альбина Адигамова · Сканирование ментального поля</title>
+<meta name="description" content="Бесплатное 15-минутное сканирование ментального поля: Альбина Адигамова считывает установки и блоки, которые мешают росту в финансах, реализации, отношениях и здоровье. Запись в Telegram.">
+<meta name="theme-color" content="#06041a">
+<link rel="canonical" href="https://annkazanskaya.github.io/albina-adigamova/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Альбина Адигамова">
+<meta property="og:title" content="Сканирование ментального поля · Альбина Адигамова">
+<meta property="og:description" content="Бесплатное 15-минутное сканирование ментального поля: Альбина Адигамова считывает установки и блоки, которые мешают росту в финансах, реализации, отношениях и здоровье. Запись в Telegram.">
+<meta property="og:url" content="https://annkazanskaya.github.io/albina-adigamova/">
+<meta property="og:image" content="https://annkazanskaya.github.io/albina-adigamova/img/albina-1.webp">
+<meta property="og:image:width" content="959">
+<meta property="og:image:height" content="1280">
+<meta property="og:image:alt" content="Альбина Адигамова">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Сканирование ментального поля · Альбина Адигамова">
+<meta name="twitter:description" content="Бесплатное 15-минутное сканирование ментального поля: Альбина Адигамова считывает установки и блоки, которые мешают росту в финансах, реализации, отношениях и здоровье. Запись в Telegram.">
+<meta name="twitter:image" content="https://annkazanskaya.github.io/albina-adigamova/img/albina-1.webp">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;900&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one long scroll through deep space. Starfield canvas + drifting nebulae behind,
+   content in glass "capsules". Hero photo = planet with orbit rings. Single committed dark theme. */
+:root{
+  --bg:#06041a;
+  --bg2:#0d0830;
+  --fg:#f4efff;
+  --muted:#b9b0d9;
+  --magenta:#ff4fa8;
+  --cyan:#3ee6ff;
+  --gold:#ffd166;
+  --violet:#8d5cff;
+  --coral:#ff8a5c;
+  --glass:rgba(255,255,255,.055);
+  --glass-b:rgba(255,255,255,.14);
+  --display:'Unbounded', 'Arial Black', sans-serif;
+  --body:'Manrope', 'Segoe UI', Arial, sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);
+  font-size:17px;line-height:1.6;overflow-x:hidden;
+}
+@media (prefers-reduced-motion:reduce){ *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition:none!important} }
+
+/* ---------- cosmic backdrop ---------- */
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.nebula{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.nebula span{
+  position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;mix-blend-mode:screen;
+  animation:drift 26s ease-in-out infinite alternate;
+}
+.nebula .n1{width:62vw;height:62vw;left:-18vw;top:-14vw;background:radial-gradient(circle,#ff2d95 0%,#7a1fff 45%,transparent 70%)}
+.nebula .n2{width:55vw;height:55vw;right:-20vw;top:28vh;background:radial-gradient(circle,#19d3ff 0%,#2a3cff 50%,transparent 72%);animation-delay:-9s;animation-duration:32s}
+.nebula .n3{width:48vw;height:48vw;left:18vw;top:120vh;background:radial-gradient(circle,#ffb347 0%,#ff4fa8 50%,transparent 72%);animation-delay:-17s;animation-duration:38s;opacity:.4}
+.nebula .n4{width:60vw;height:60vw;right:-10vw;top:210vh;background:radial-gradient(circle,#7cffc4 0%,#2bd6ff 45%,transparent 70%);animation-delay:-5s;animation-duration:30s;opacity:.35}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(9vw,7vh) scale(1.18)}}
+
+.page{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding-block:0 80px;padding-inline:20px}
+section{padding-block:72px}
+@media(min-width:760px){section{padding-block:104px}}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(2rem,5.4vw,4rem);font-weight:900;letter-spacing:-.01em}
+h2{font-size:clamp(1.55rem,3.6vw,2.6rem);font-weight:700}
+h3{font-size:1.1rem;font-weight:500}
+p{margin:0}
+.eyebrow{
+  font-family:var(--display);font-weight:300;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cyan);display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:62ch}
+.grad{
+  background:linear-gradient(95deg,var(--gold) 0%,var(--magenta) 45%,var(--cyan) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+/* ---------- nav ---------- */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:700;font-size:.9rem;letter-spacing:.06em;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg)}
+.logo i{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,var(--magenta) 55%,#7a1fff);box-shadow:0 0 18px var(--magenta)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px;flex-wrap:wrap}
+.nav a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:600}
+.nav a:hover,.nav a:focus-visible{color:var(--fg)}
+.nav .mini{display:none}
+@media(max-width:700px){
+  .nav{flex-wrap:nowrap;padding-block:16px}
+  .nav ul{display:none}
+  .nav .mini{display:inline-flex;padding:10px 16px;font-size:.72rem}
+  .logo{font-size:.78rem}
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;text-decoration:none;
+  font-family:var(--display);font-weight:500;font-size:.88rem;letter-spacing:.02em;color:#140a2e;
+  background:linear-gradient(95deg,var(--gold),var(--magenta) 60%,var(--violet));background-size:200% 100%;
+  box-shadow:0 0 0 1px rgba(255,255,255,.18) inset,0 14px 40px -10px rgba(255,79,168,.7);
+  transition:transform .25s,box-shadow .25s,background-position .5s;
+}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);background-position:100% 0;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset,0 18px 50px -8px rgba(62,230,255,.6);outline:none}
+.btn.ghost{background:var(--glass);color:var(--fg);box-shadow:0 0 0 1px var(--glass-b) inset}
+.btn.ghost:hover{box-shadow:0 0 0 1px var(--cyan) inset,0 0 30px -8px var(--cyan)}
+.btn.big{padding:20px 36px;font-size:1rem}
+
+/* ---------- hero ---------- */
+.hero{display:grid;gap:40px;align-items:center;padding-block:40px 80px}
+@media(min-width:860px){.hero{grid-template-columns:1.1fr .9fr;padding-block:60px 110px}}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;align-items:center}
+.hero .free{font-size:.85rem;color:var(--muted)}
+.hero .free b{color:var(--gold);font-weight:700}
+.sub{font-family:var(--display);font-weight:300;font-size:clamp(.95rem,1.6vw,1.2rem);color:var(--cyan);margin:18px 0 16px;letter-spacing:.04em}
+
+.planet-wrap{position:relative;width:min(100%,440px);margin:0 auto;max-width:100%}
+.planet-wrap .frame{position:relative;width:100%;aspect-ratio:1}
+.planet{
+  position:absolute;inset:14%;border-radius:50%;overflow:hidden;
+  box-shadow:0 0 0 1px rgba(255,255,255,.2),0 0 60px -10px var(--magenta),0 0 120px -30px var(--cyan),inset -30px -30px 80px rgba(6,4,26,.8);
+}
+.planet img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.planet::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.18),transparent 45%),linear-gradient(200deg,transparent 55%,rgba(6,4,26,.75))}
+.orbit{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.18);animation:spin linear infinite}
+.orbit.o1{inset:4%;animation-duration:22s;border-color:rgba(62,230,255,.35)}
+.orbit.o2{inset:-6%;animation-duration:38s;animation-direction:reverse;border-style:dashed;border-color:rgba(255,209,102,.3)}
+.orbit.o3{inset:9%;transform:rotate(60deg);animation-duration:30s;border-color:rgba(255,79,168,.35)}
+.orbit i{position:absolute;top:-6px;left:50%;width:12px;height:12px;border-radius:50%;margin-left:-6px}
+.o1 i{background:var(--cyan);box-shadow:0 0 16px var(--cyan)}
+.o2 i{background:var(--gold);box-shadow:0 0 16px var(--gold);width:9px;height:9px}
+.o3 i{background:var(--magenta);box-shadow:0 0 16px var(--magenta)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.o3{animation-name:spin60}
+@keyframes spin60{from{transform:rotate(60deg)}to{transform:rotate(420deg)}}
+.ring-label{
+  position:absolute;right:-4px;bottom:6%;background:rgba(13,8,48,.82);border:1px solid var(--glass-b);backdrop-filter:blur(10px);
+  border-radius:16px;padding:12px 16px;font-size:.82rem;line-height:1.35;max-width:200px;
+}
+@media(max-width:859px){
+  .planet-wrap{width:min(100%,340px);margin-bottom:0}
+  .ring-label{position:static;margin:14px auto 0;max-width:none;text-align:center;width:fit-content}
+  .planet-wrap{display:flex;flex-direction:column;aspect-ratio:auto}
+  .planet-wrap .planet,.planet-wrap .orbit{position:absolute}
+  .planet-wrap .frame{position:relative;width:100%;aspect-ratio:1}
+}
+.ring-label b{display:block;font-family:var(--display);font-weight:500;color:var(--gold);font-size:.78rem;letter-spacing:.06em}
+
+/* ---------- glass cards ---------- */
+.glass{background:var(--glass);border:1px solid var(--glass-b);border-radius:24px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.grid3{display:grid;gap:18px;margin-top:40px}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr)}}
+.sign{padding:28px 26px;position:relative;overflow:hidden;min-width:0}
+.sign::before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;filter:blur(50px);opacity:.6;right:-50px;top:-60px;background:var(--c)}
+.sign .ico{font-family:var(--display);font-weight:700;font-size:1.6rem;color:var(--c);margin-bottom:14px;text-shadow:0 0 20px var(--c)}
+.sign h3{margin-bottom:10px}
+.sign p{color:var(--muted);font-size:.98rem}
+
+/* ---------- about scanning ---------- */
+.two{display:grid;gap:40px;align-items:start}
+@media(min-width:860px){.two{grid-template-columns:1fr 1fr}}
+.quote{
+  font-family:var(--display);font-weight:300;font-size:clamp(1.05rem,1.9vw,1.35rem);line-height:1.45;
+  padding:26px 30px;border-left:2px solid var(--magenta);background:linear-gradient(90deg,rgba(255,79,168,.12),transparent);border-radius:0 20px 20px 0;
+}
+.not{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.not span{padding:8px 14px;border-radius:999px;border:1px solid var(--glass-b);font-size:.86rem;color:var(--muted)}
+.not span s{color:var(--coral);text-decoration-thickness:2px}
+
+.spheres{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.sphere{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;min-width:0}
+.ball{
+  width:clamp(84px,12vw,124px);aspect-ratio:1;border-radius:50%;position:relative;
+  background:radial-gradient(circle at 32% 30%,#fff 0%,var(--c) 22%,color-mix(in srgb,var(--c) 40%,#06041a) 75%);
+  box-shadow:0 0 50px -10px var(--c),inset -12px -14px 30px rgba(0,0,0,.45);
+  animation:float 6s ease-in-out infinite;
+}
+.sphere:nth-child(2) .ball{animation-delay:-1.5s}.sphere:nth-child(3) .ball{animation-delay:-3s}.sphere:nth-child(4) .ball{animation-delay:-4.5s}
+.ball::after{content:"";position:absolute;inset:-18% -30%;border-radius:50%;border:2px solid color-mix(in srgb,var(--c) 70%,transparent);transform:rotateX(70deg);opacity:.7}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.sphere b{font-family:var(--display);font-weight:500;font-size:.95rem}
+.sphere small{color:var(--muted);font-size:.85rem;line-height:1.4}
+
+/* ---------- process ---------- */
+.steps{display:grid;gap:18px;margin-top:40px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{padding:30px 26px;min-width:0;position:relative}
+.step .num{font-family:var(--display);font-weight:900;font-size:2.6rem;line-height:1;margin-bottom:14px}
+.step .time{display:inline-block;margin-bottom:12px;padding:5px 12px;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#140a2e;background:var(--gold)}
+.step p{color:var(--muted);font-size:.98rem}
+
+/* ---------- about me ---------- */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.gallery figure{margin:0;border-radius:22px;overflow:hidden;aspect-ratio:3/4;position:relative;border:1px solid var(--glass-b);max-width:100%}
+.gallery img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block;transition:transform .7s}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figure:nth-child(2){transform:translateY(28px)}
+.gallery figure:nth-child(3) img{object-position:50% 32%}
+@media(max-width:600px){.gallery{grid-template-columns:1fr 1fr;gap:10px}.gallery figure:nth-child(2){transform:none}.gallery figure:nth-child(3){grid-column:span 2;aspect-ratio:4/3}.gallery figure:nth-child(3) img{object-position:50% 22%}}
+.diploma{display:grid;gap:22px;margin-top:48px;padding:28px 30px;align-items:center}
+@media(min-width:760px){.diploma{grid-template-columns:auto 1fr}}
+.seal{
+  width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:.65rem;letter-spacing:.1em;text-align:center;line-height:1.3;
+  background:conic-gradient(from 0deg,var(--gold),var(--magenta),var(--cyan),var(--gold));padding:3px;color:var(--fg);
+}
+.seal span{width:100%;height:100%;border-radius:50%;background:var(--bg2);display:grid;place-items:center}
+.diploma dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:.95rem}
+.diploma dt{color:var(--muted)}
+.diploma dd{margin:0;font-weight:600}
+
+/* ---------- reviews ---------- */
+.reviews{columns:1;column-gap:18px;margin-top:40px}
+@media(min-width:700px){.reviews{columns:2}}
+@media(min-width:1000px){.reviews{columns:3}}
+.rev{break-inside:avoid;margin-bottom:18px;padding:26px 24px;font-size:.95rem;color:#e6e0fa;position:relative}
+.rev::before{content:"“";position:absolute;top:8px;right:20px;font-family:var(--display);font-size:3rem;font-weight:900;line-height:1;background:linear-gradient(var(--magenta),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.6}
+.rev p{margin:0}
+.rev footer{margin-top:16px;display:flex;align-items:center;gap:10px;font-size:.84rem;color:var(--muted)}
+.rev footer i{width:28px;height:28px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 35%,#fff,var(--c) 45%,color-mix(in srgb,var(--c) 40%,#000));box-shadow:0 0 14px var(--c)}
+.rev footer b{color:var(--fg);font-weight:700}
+
+/* ---------- final cta ---------- */
+.final{text-align:center;padding:64px 24px;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 180deg at 50% 50%,transparent 0 60%,rgba(255,79,168,.18) 70%,transparent 80%,rgba(62,230,255,.18) 90%,transparent);animation:spin 40s linear infinite;pointer-events:none}
+.final>*{position:relative}
+.final h2{margin-bottom:16px}
+.final .lead{margin-inline:auto;margin-bottom:34px}
+.contacts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+@media(max-width:600px){.contacts{flex-direction:column}.contacts .btn{width:100%;justify-content:center;font-size:.9rem;padding:18px 22px}.final{padding:48px 18px}}
+.hint{margin-top:26px;font-size:.86rem;color:var(--muted)}
+.hint code{font-family:var(--body);background:var(--glass);border:1px solid var(--glass-b);padding:3px 10px;border-radius:8px;color:var(--gold)}
+
+footer.site{color:var(--muted);font-size:.84rem;text-align:center;padding-top:30px;border-top:1px solid var(--glass-b);margin-top:40px}
+</style>
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="nebula" aria-hidden="true"><span class="n1"></span><span class="n2"></span><span class="n3"></span><span class="n4"></span></div>
+
+<div class="page">
+  <nav class="nav" aria-label="Разделы">
+    <a class="logo" href="#top"><i></i>АЛЬБИНА АДИГАМОВА</a>
+    <ul>
+      <li><a href="#what">Что это</a></li>
+      <li><a href="#how">Как проходит</a></li>
+      <li><a href="#me">Обо мне</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#contact">Записаться</a></li>
+    </ul>
+    <a class="btn mini" href="#contact">Записаться</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <span class="eyebrow">бесплатно · 15 минут</span>
+      <h1>Сканирование <span class="grad">ментального поля</span></h1>
+      <p class="sub">Альбина Адигамова · считываю то, что вас блокирует</p>
+      <p class="lead">За 15 минут расскажу о затыках, программах и установках, которые блокируют рост в финансах, реализации, отношениях и здоровье. Потом короткий созвон, где объясню, что вижу и на что стоит обратить внимание.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Записаться на сканирование</a>
+        <span class="free">Первое сканирование <b>бесплатно</b></span>
+      </div>
+    </div>
+    <div class="planet-wrap">
+      <div class="frame">
+      <div class="orbit o2"><i></i></div>
+      <div class="orbit o1"><i></i></div>
+      <div class="orbit o3"><i></i></div>
+      <div class="planet"><img src="img/albina-1.webp" alt="Альбина Адигамова" width="959" height="1280" loading="eager" fetchpriority="high" decoding="async"></div>
+      </div>
+      <div class="ring-label"><b>4 сферы</b>финансы · реализация · отношения · здоровье</div>
+    </div>
+  </header>
+
+  <section id="signs">
+    <span class="eyebrow">сканирование для вас, если</span>
+    <h2>Чувствуете, что застряли, <span class="grad">но не понимаете почему</span></h2>
+    <div class="grid3">
+      <article class="glass sign" style="--c:var(--magenta)">
+        <div class="ico">◎</div>
+        <h3>Стоите на месте</h3>
+        <p>Есть ощущение, что вы застряли, и непонятно, что именно держит.</p>
+      </article>
+      <article class="glass sign" style="--c:var(--cyan)">
+        <div class="ico">✦</div>
+        <h3>Энергия уходит в никуда</h3>
+        <p>Не хватает сил на действия, а усилия не превращаются в результат.</p>
+      </article>
+      <article class="glass sign" style="--c:var(--gold)">
+        <div class="ico">☾</div>
+        <h3>Хотите понять, что мешает</h3>
+        <p>Хотите узнать, какие установки не дают жить счастливо, и с чем работать дальше.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="what">
+    <div class="two">
+      <div>
+        <span class="eyebrow">что такое сканирование</span>
+        <h2>Считывание информации с ментального поля человека</h2>
+        <p class="lead" style="margin-top:18px">Благодаря раскрытым интуитивным энергетическим каналам я погружаюсь в «поле» человека и считываю информацию о его затыках, программах и установках, которые блокируют рост.</p>
+        <div class="quote" style="margin-top:26px">Эти каналы есть у каждого человека. С рождения они в спящем режиме: из-за влияния социума и потому, что их не развивают.</div>
+        <div class="not">
+          <span>Это <s>не магия</s></span>
+          <span><s>не эзотерика</s></span>
+          <span>и <s>не психология</s></span>
+        </div>
+      </div>
+      <div class="spheres" aria-label="Четыре сферы, которые сканируются">
+        <div class="sphere" style="--c:var(--gold)"><div class="ball"></div><b>Финансы</b><small>что блокирует рост дохода</small></div>
+        <div class="sphere" style="--c:var(--magenta)"><div class="ball"></div><b>Реализация</b><small>почему не раскрывается потенциал</small></div>
+        <div class="sphere" style="--c:var(--coral)"><div class="ball"></div><b>Отношения</b><small>какие программы мешают близости</small></div>
+        <div class="sphere" style="--c:var(--cyan)"><div class="ball"></div><b>Здоровье</b><small>где энергия блокируется в теле</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <span class="eyebrow">как проходит</span>
+    <h2>Три шага <span class="grad">к ясности</span></h2>
+    <div class="steps">
+      <article class="glass step">
+        <div class="num grad">1</div>
+        <span class="time">1 минута</span>
+        <h3>Заявка</h3>
+        <p>Напишите мне в Telegram. Договоримся об удобном времени.</p>
+      </article>
+      <article class="glass step">
+        <div class="num grad">2</div>
+        <span class="time">15 минут</span>
+        <h3>Сканирование</h3>
+        <p>Я погружаюсь в ваше поле и считываю, где именно стоят блоки и откуда они берутся.</p>
+      </article>
+      <article class="glass step">
+        <div class="num grad">3</div>
+        <span class="time">20–30 минут</span>
+        <h3>Созвон по аудио</h3>
+        <p>Рассказываю, что вижу, и на что стоит обратить внимание в первую очередь.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="me">
+    <span class="eyebrow">обо мне</span>
+    <h2>Добрый день, меня зовут <span class="grad">Альбина Адигамова</span></h2>
+    <p class="lead" style="margin-top:18px">Я работаю мягко и бережно. Моя задача не напугать, а показать, где именно вы теряете энергию, и дать ясную точку, с которой можно начать двигаться к себе.</p>
+    <div class="gallery">
+      <figure><img src="img/albina-1.webp" alt="Альбина, портрет" width="959" height="1280" loading="lazy" decoding="async"></figure>
+      <figure><img src="img/albina-2.jpg" alt="Альбина в студии" width="884" height="1176" loading="lazy" decoding="async"></figure>
+      <figure><img src="img/albina-3.webp" alt="Альбина, фотосессия" width="884" height="1920" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="glass diploma">
+      <div class="seal"><span>ДИПЛОМ<br>2017</span></div>
+      <dl>
+        <dt>Квалификация</dt><dd>Личностное консультирование и тренинговая работа</dd>
+        <dt>Диплом</dt><dd>№ 131-ПП/17</dd>
+        <dt>Выдан</dt><dd>Екатеринбург, 2017 год</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <span class="eyebrow">отзывы</span>
+    <h2>Что говорят после <span class="grad">сканирования</span></h2>
+    <div class="reviews">
+      <article class="glass rev" style="--c:var(--cyan)">
+        <p>Прошёл сканирование у Альбины. По всем сферам жизни очень точное попадание 🎯, как будто мне сделали томографию на МРТ аппарате. И, если продолжать аналогию с медициной, то я, как и многие пациенты, вроде как и сам чувствовал, что и где меня не очень устраивает в жизни, и вроде как понимал почему и что делать дальше, чтоб это улучшить, но допускал также, что самостоятельно мог и недостаточно корректно поставить себе диагноз, заблуждаться, и интересно было получить подтверждение своего мнения или иное/дополненное видение с другой точки зрения от кого-то извне. И в этом мне прекрасно помогла Альбина, она будто подключилась к моему профайлу, считала информацию прямо оттуда и бережно, заботливо, с теплотой и с эмпатией донесла её до меня. После общения осталось приятное послевкусие, лёгкость в мыслях и в теле и более упорядоченное видение по всем ключевым сферам моей жизни. Благодарю, Альбина, и желаю успехов в дальнейшем постижении этого искусства! 🙏🤗❤️</p>
+        <footer><i></i><span><b>Участник сканирования</b></span></footer>
+      </article>
+      <article class="glass rev" style="--c:var(--magenta)">
+        <p>Альбина, благодарю тебя за сегодняшнюю работу, за сеанс сканирования. Ты очень точно подсветила те моменты, которые сейчас для меня важны и на которые мне действительно стоит обратить внимание. Мне очень откликается твоя мягкая, женственная, бережная и дающая энергия. Я чувствую к тебе доверие и с удовольствием пойду к тебе в фокус-группу. Благодарю за твоё пространство и за то, как тонко ты чувствуешь и передаёшь информацию. 🙏❤️</p>
+        <footer><i></i><span><b>Марина</b></span></footer>
+      </article>
+      <article class="glass rev" style="--c:var(--gold)">
+        <p>Благодарю за такой интересный эксперимент 🙏☺️❤️ Всё, что было просканировано, отразило моё состояние с высокой точностью! В процессе я чувствовала себя комфортно и расслабленно, практика мне понравилась ☺️ Теперь буду внимательно наблюдать за своими ощущениями 👍❤️</p>
+        <footer><i></i><span><b>Участница сканирования</b></span></footer>
+      </article>
+      <article class="glass rev" style="--c:var(--coral)">
+        <p>Прошла сканирование тела у Альбины, однозначно рекомендую. Удивительно, сколько открытий о себе, о потребностях своей души можно сделать. Это что-то новое для меня: через сканирование узнать про разные участки своего тела и осознать свои чувства. Мне было настолько увлекательно понимать, как циркулирует энергия в теле, в каких участках она блокируется и, главное, в чём причина этих блоков. Становится понятно, с чем надо дальше работать. Очень важно сделать первый шаг и осознать проблему. Однозначно буду продолжать работу в этом направлении. Верю, что трансформации помогут найти контакт с собственным телом и душой, услышать их сигналы и наконец-то познакомиться с собой поближе.</p>
+        <footer><i></i><span><b>Ирина</b></span></footer>
+      </article>
+      <article class="glass rev" style="--c:var(--violet)">
+        <p>Сегодня прошёл сканирование. Альбина, спасибо, что заряжаешь верой в себя, желанием жить.</p>
+        <footer><i></i><span><b>Участник сканирования</b></span></footer>
+      </article>
+      <article class="glass rev" style="--c:var(--cyan)">
+        <p>С Альбиной мы давно не виделись, и я очень рада была снова встретиться и получить обалденный опыт по сканированию своего тела. Верно были указаны зажимы в плечах, которые нужно прорабатывать, и тот груз, который я несу. Очень большое попадание в перекрытие горловой чакры, с этим тоже предстоит работа. Выявили один очень интересный запрос для психолога, потому что он уходит корнями в детскую тему. Отдельно хочу отметить введение: мягкое, приятное, очень позитивное, настроило на лучший лад. После встречи появилось много энергии и радости внутри. Очень благодарна за этот опыт!</p>
+        <footer><i></i><span><b>Марина</b></span></footer>
+      </article>
+      <article class="glass rev" style="--c:var(--gold)">
+        <p>Сегодня прошла сканирование у Альбины. Были чёткие попадания в то, что именно сейчас со мной происходит. Где-то настолько сильно резонировало, что текли слёзы... Есть огромное желание заглянуть в своё подсознание, увидеть скрытые программы и установки, мешающие реализации. И есть ясное понимание, что сканирование — это возможность начать двигаться к самой себе. Большое спасибо Альбине за её труды и старания, за её отзывчивость и искреннее желание помочь!</p>
+        <footer><i></i><span><b>Участница сканирования</b></span></footer>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="glass final">
+      <span class="eyebrow" style="justify-content:center">записаться</span>
+      <h2>Узнайте, что вас <span class="grad">блокирует</span></h2>
+      <p class="lead">Бесплатное сканирование за 15 минут и созвон по аудио на 20–30 минут. Напишите мне в Telegram.</p>
+      <div class="contacts">
+        <a class="btn big" href="https://t.me/albinacoach27" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+      <p class="hint">Просто напишите слово <code>Сканирование</code>, и я отвечу, когда есть свободное время.</p>
+    </div>
+    <footer class="site">© Альбина Адигамова · Сканирование ментального поля</footer>
+  </section>
+</div>
+
+<script>
+(function(){
+  var c=document.getElementById('stars'),ctx=c.getContext('2d'),stars=[],w,h,dpr,mx=0,my=0;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function resize(){
+    dpr=Math.min(window.devicePixelRatio||1,2);
+    w=c.width=innerWidth*dpr;h=c.height=innerHeight*dpr;
+    stars=[];var n=Math.floor(innerWidth*innerHeight/3200);
+    for(var i=0;i<n;i++){
+      stars.push({x:Math.random()*w,y:Math.random()*h,r:(Math.random()*1.4+.3)*dpr,z:Math.random(),p:Math.random()*6.28,
+        s:Math.random()*.02+.004,hue:[200,320,45,180][Math.floor(Math.random()*4)]});
+    }
+  }
+  var comet=null,t=0;
+  function frame(){
+    t+=1;ctx.clearRect(0,0,w,h);
+    for(var i=0;i<stars.length;i++){
+      var s=stars[i];s.p+=s.s;var a=.35+.65*(.5+.5*Math.sin(s.p));
+      var px=s.x+mx*s.z*30*dpr,py=s.y+my*s.z*30*dpr;
+      ctx.beginPath();ctx.arc(px,py,s.r*(s.z*.7+.5),0,6.28);
+      ctx.fillStyle=s.z>.8?'hsla('+s.hue+',100%,80%,'+a+')':'rgba(255,255,255,'+a*.9+')';ctx.fill();
+    }
+    if(!reduce){
+      if(!comet&&Math.random()<.004){comet={x:Math.random()*w*.8,y:Math.random()*h*.4,vx:(7+Math.random()*5)*dpr,vy:(3+Math.random()*3)*dpr,life:0};}
+      if(comet){
+        comet.life++;var g=ctx.createLinearGradient(comet.x,comet.y,comet.x-comet.vx*14,comet.y-comet.vy*14);
+        g.addColorStop(0,'rgba(255,255,255,.95)');g.addColorStop(.3,'rgba(62,230,255,.6)');g.addColorStop(1,'rgba(255,79,168,0)');
+        ctx.strokeStyle=g;ctx.lineWidth=2*dpr;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(comet.x,comet.y);ctx.lineTo(comet.x-comet.vx*14,comet.y-comet.vy*14);ctx.stroke();
+        comet.x+=comet.vx;comet.y+=comet.vy;if(comet.life>90||comet.x>w||comet.y>h)comet=null;
+      }
+      requestAnimationFrame(frame);
+    }
+  }
+  resize();frame();
+  addEventListener('resize',resize);
+  addEventListener('mousemove',function(e){mx=(e.clientX/innerWidth-.5);my=(e.clientY/innerHeight-.5);},{passive:true});
+})();
+</script>
+</body>
+</html>
