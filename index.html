@@ -242,6 +242,50 @@ p{margin:0}
 .hint code{font-family:var(--body);background:var(--glass);border:1px solid var(--glass-b);padding:3px 10px;border-radius:8px;color:var(--gold)}
 
 footer.site{color:var(--muted);font-size:.84rem;text-align:center;padding-top:30px;border-top:1px solid var(--glass-b);margin-top:40px}
+
+/* ---------- mobile tune (desktop untouched) ---------- */
+html,body{overflow-x:clip}
+.nav a.btn{color:#140a2e}
+@media(max-width:700px){
+  body{font-size:16px}
+  .page{padding-inline:16px;padding-bottom:40px}
+  section{padding-block:44px}
+  .lead{font-size:1.02rem}
+  .eyebrow{margin-bottom:12px;font-size:.66rem;letter-spacing:.18em}
+  .nav{padding-block:14px;gap:10px}
+  .logo{font-size:.66rem;white-space:nowrap;letter-spacing:.04em}
+  .logo i{width:10px;height:10px}
+  .nav .mini{padding:10px 14px;font-size:.64rem;flex:none}
+  .hero{padding-block:12px 24px;gap:26px}
+  .planet-wrap{order:-1;width:min(66%,236px)}
+  .orbit.o2{inset:-3%}
+  .ring-label{font-size:.76rem;padding:9px 12px;margin-top:10px;border-radius:12px}
+  .sub{margin:12px 0 12px}
+  .hero .cta{margin-top:22px;gap:12px}
+  .hero .cta .btn{width:100%;justify-content:center}
+  .hero .free{width:100%;text-align:center}
+  .grid3,.steps,.gallery,.reviews{margin-top:24px;gap:14px}
+  .sign,.step{padding:22px 20px}
+  .sign .ico{font-size:1.3rem;margin-bottom:8px}
+  .step .num{font-size:2rem;margin-bottom:8px}
+  .two{gap:30px}
+  .quote{padding:18px 20px;font-size:1rem}
+  .not{margin-top:16px;gap:8px}
+  .not span{font-size:.8rem;padding:6px 12px}
+  .spheres{gap:18px 12px}
+  .sphere small{font-size:.8rem}
+  .diploma{margin-top:26px;padding:22px 20px;gap:16px}
+  .diploma dl{grid-template-columns:1fr;gap:2px 0}
+  .diploma dt{margin-top:10px;font-size:.82rem}
+  .rev{padding:20px 18px;font-size:.92rem;margin-bottom:14px}
+  .rev.clamp p{display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}
+  .rev .more{display:inline-block;margin-top:10px;background:none;border:0;padding:0;color:var(--cyan);font:inherit;font-weight:700;cursor:pointer}
+  .final{padding:40px 18px}
+  .final .lead{margin-bottom:26px}
+  .hint{font-size:.82rem}
+  footer.site{margin-top:26px;padding-top:22px}
+}
+@media(min-width:701px){.rev .more{display:none}}
 </style>
 </head>
 <body>
@@ -456,6 +500,20 @@ footer.site{color:var(--muted);font-size:.84rem;text-align:center;padding-top:30
   resize();frame();
   addEventListener('resize',resize);
   addEventListener('mousemove',function(e){mx=(e.clientX/innerWidth-.5);my=(e.clientY/innerHeight-.5);},{passive:true});
+})();
+</script>
+
+<script>
+(function(){
+  var revs=document.querySelectorAll('.rev');
+  for(var i=0;i<revs.length;i++){
+    var r=revs[i],p=r.querySelector('p');
+    if(!p||p.textContent.length<380)continue;
+    r.classList.add('clamp');
+    var b=document.createElement('button');b.type='button';b.className='more';b.textContent='Читать дальше';
+    b.addEventListener('click',function(e){var rv=e.target.closest('.rev');var open=rv.classList.toggle('clamp');e.target.textContent=open?'Читать дальше':'Свернуть';});
+    p.insertAdjacentElement('afterend',b);
+  }
 })();
 </script>
 </body>
